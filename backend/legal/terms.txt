@@ -1,0 +1,18 @@
+DEMO DOCUMENT — LOCAL MVP
+
+This document describes the local YUDY prototype. It is not a published agreement for a production service.
+
+What YUDY does
+YUDY is an information and discovery platform for exploring tokenized stocks and ETFs. It helps you discover what to explore, based on your interests. It does not give personal investment advice or assess whether an investment is suitable for you.
+
+What YUDY does not do
+YUDY is not a broker, custodian, execution venue or payment processor. It does not sell securities, execute trades, hold your funds, accept deposits or process withdrawals. A future Buy button only opens an external provider; that provider has its own terms and availability restrictions.
+
+Information and risks
+Prototype market information is demo data, not live market information. Underlying stocks or ETFs and their tokenized representations are different products. Asset prices can change and losses are possible. Tokenized products may also involve issuer, backing, liquidity, technology and regulatory risks.
+
+Your account
+Keep your password private and use this prototype only for exploration. Likes and saves are separate actions. Feed ordering is intended to support discovery; it is not a direction to buy an asset.
+
+Versions
+When an updated mandatory document is published, you must review and accept its new version before continuing onboarding. Registration does not automatically accept any document.

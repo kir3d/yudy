@@ -1,0 +1,64 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-yudy}
+      POSTGRES_USER: ${POSTGRES_USER:-yudy}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Copy .env.example to .env and set POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: ${DATABASE_URL:?Set DATABASE_URL in .env}
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+      APP_ENV: ${APP_ENV:-development}
+      CORS_ORIGINS: ${CORS_ORIGINS:-[]}
+      JWT_SECRET: ${JWT_SECRET:?Set a random JWT_SECRET in .env}
+      JWT_ISSUER: ${JWT_ISSUER:-yudy}
+      ACCESS_TOKEN_MINUTES: ${ACCESS_TOKEN_MINUTES:-15}
+      REFRESH_TOKEN_DAYS: ${REFRESH_TOKEN_DAYS:-30}
+      AUTH_RATE_LIMIT: ${AUTH_RATE_LIMIT:-20}
+      AUTH_RATE_WINDOW_SECONDS: ${AUTH_RATE_WINDOW_SECONDS:-60}
+      BUY_PROVIDER_BASE_URL: ${BUY_PROVIDER_BASE_URL:-http://10.0.2.2:8001}
+      BUY_PROVIDER_NAME: ${BUY_PROVIDER_NAME:-Demo Provider}
+      DEMO_MARKET_PATH: ${DEMO_MARKET_PATH:-/app/market/manifest.json}
+      RISK_QUESTIONNAIRE_PATH: ${RISK_QUESTIONNAIRE_PATH:-/app/risk/manifest.json}
+      TAXONOMY_PATH: ${TAXONOMY_PATH:-/app/taxonomy/manifest.json}
+      LEGAL_DOCUMENTS_PATH: ${LEGAL_DOCUMENTS_PATH:-/app/legal/manifest.json}
+    ports:
+      - '8000:8000'
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, python, -c, 'import urllib.request; urllib.request.urlopen("http://localhost:8000/health")']
+      interval: 10s
+      timeout: 3s
+      retries: 10
+  demo-provider:
+    build: ./backend
+    command: [uvicorn, demo_provider.app:app, --host, 0.0.0.0, --port, '8001']
+    ports:
+      - '8001:8001'
+    healthcheck:
+      test: [CMD, python, -c, 'import urllib.request; urllib.request.urlopen("http://localhost:8001/health")']
+      interval: 10s
+      timeout: 3s
+      retries: 10
+volumes:
+  postgres_data:

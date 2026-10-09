@@ -1,0 +1,18 @@
+DEMO DOCUMENT — LOCAL MVP
+
+This document describes data handled by the local YUDY prototype. A production privacy policy must identify its operator, contacts, applicable rules and retention arrangements before release.
+
+Account and authentication data
+The prototype stores your email address and a password hash. It stores hashes of refresh tokens, their expiry dates and revocation status to manage sign-in sessions. It does not store your password in readable form. Android stores encrypted session data on your device using Android Keystore.
+
+Consent records
+The prototype stores your account id, the document and version you explicitly accept, and the time of acceptance. Earlier consent records are retained when a new version is published.
+
+Planned discovery data
+When their features are implemented, profile preferences, questionnaire answers and asset interactions may be processed to display and personalize exploration content. This prototype does not perform real-money transactions or store payment, custody or brokerage account data.
+
+Local infrastructure
+The demo uses the local backend database and Redis. Authentication request counts and source IP-derived identifiers are used to limit repeated sign-in attempts. The MVP does not include third-party analytics. No cross-border transfer, retention period or operator contact is represented as established by this demo text.
+
+Your choice
+Read the current documents before accepting them. You can leave this flow or sign out without accepting. The demo currently has no self-service account deletion or consent-withdrawal feature; these production processes are not represented as available.

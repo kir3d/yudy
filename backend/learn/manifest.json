@@ -1,0 +1,68 @@
+{
+  "articles": [
+    {
+      "slug": "tokenized-stocks",
+      "title": "What are tokenized stocks?",
+      "summary": "A token and its underlying share can carry different rights.",
+      "content": "A tokenized stock uses a crypto asset to represent a security or exposure to it. The structure matters: some tokens record ownership, while others provide economic exposure through a separate issuer.\n\nHolding a token does not automatically give the same voting, dividend or legal rights as holding the underlying share. Read the product terms. YUDY shows underlying and token information separately; its current instruments are fictional demo examples.",
+      "sort_order": 0,
+      "active": true
+    },
+    {
+      "slug": "how-tokenization-works",
+      "title": "How does tokenization work?",
+      "summary": "Technology records transfers; legal terms define what is transferred.",
+      "content": "Tokenization represents an instrument using a blockchain record. An issuer or third party defines the connection between the token and the underlying asset.\n\nIssuance, custody, transfers and redemption depend on the specific structure. A blockchain record alone does not prove reserves or guarantee redemption. Check who issues the token and what claim its terms provide.",
+      "sort_order": 1,
+      "active": true
+    },
+    {
+      "slug": "what-is-an-etf",
+      "title": "What is an ETF?",
+      "summary": "A fund traded on an exchange, with its own strategy and risks.",
+      "content": "An exchange-traded fund pools assets under a stated investment strategy. Its shares trade on an exchange. Some funds track an index; others use active strategies.\n\nA fund can hold stocks, bonds or other assets. Its trading price may differ from its net asset value. Diversification depends on the holdings: a concentrated ETF is not automatically broadly diversified. Fees and market losses still matter.",
+      "sort_order": 2,
+      "active": true
+    },
+    {
+      "slug": "price-earnings-ratio",
+      "title": "What is P/E?",
+      "summary": "A price-to-earnings comparison, with important limits.",
+      "content": "P/E compares a share price with earnings per share. In a simple example, a price of 20 and annual earnings per share of 2 produce a P/E of 10.\n\nCompanies and data providers may use historical or forecast earnings, so comparisons need consistent definitions. Negative or zero earnings make the ratio difficult to interpret. A low P/E alone does not establish value or predict returns. YUDY demo ratios are synthetic.",
+      "sort_order": 3,
+      "active": true
+    },
+    {
+      "slug": "market-cap",
+      "title": "What is Market Cap?",
+      "summary": "The market value of outstanding shares, not a company\u2019s cash balance.",
+      "content": "Market capitalization is share price multiplied by the number of outstanding shares. For example, 10 million shares at 20 each give a market cap of 200 million in that currency.\n\nIt changes as prices or share counts change. It is different from revenue, profit and cash. For a tokenized representation, the underlying company\u2019s market cap is also different from the value of issued tokens. YUDY labels underlying figures separately.",
+      "sort_order": 4,
+      "active": true
+    },
+    {
+      "slug": "understanding-risks",
+      "title": "What are the risks?",
+      "summary": "Explore both underlying-market risks and token-specific risks.",
+      "content": "Prices can fall, and an instrument may be difficult to sell at the expected price. A fund\u2019s concentration, fees and strategy also matter.\n\nToken structures add questions about issuer obligations, custody, backing, redemption and technology. The rights of token holders may differ from shareholders\u2019 rights. Neither a familiar company name nor a blockchain record guarantees protection.\n\nYUDY\u2019s Risk Profile summarizes questionnaire responses. It is separate from asset-specific risk descriptions and does not establish financial suitability.",
+      "sort_order": 5,
+      "active": true
+    },
+    {
+      "slug": "personalization",
+      "title": "How does YUDY personalize my feed?",
+      "summary": "Rules select examples for exploration from your profile and actions.",
+      "content": "For You uses deterministic rules, not machine learning. Selected interests and regions can raise matching examples; exclusions and Not interested can lower examples with shared metadata.\n\nLike and Save are independent. Save adds a bookmark; both can affect exploration with different weights. Views have a small capped effect. Experience, goals, horizon and Risk Profile can also contribute.\n\nWhy you\u2019re seeing this shows active signals. Internal scores stay hidden. Discover always exposes the full active catalog. This is discovery, not advice on what to buy.",
+      "sort_order": 6,
+      "active": true
+    },
+    {
+      "slug": "stock-versus-token",
+      "title": "Stock vs tokenized stock",
+      "summary": "Start with the legal claim, not the matching name or ticker.",
+      "content": "A traditional share and a token referring to it are not interchangeable simply because their names match. Token rights depend on whether the issuer records ownership or a third party provides a separate claim or economic exposure.\n\nCompare issuer, ownership terms, voting, distributions, custody and redemption. YUDY separates the underlying asset from each token representation so these differences remain visible. Its demo tokens are unavailable for transactions.",
+      "sort_order": 7,
+      "active": true
+    }
+  ]
+}

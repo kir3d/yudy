@@ -1,0 +1,15 @@
+[project]
+name = "yudy-cloudflare-backend"
+version = "0.1.0"
+description = "YUDY API for Cloudflare Workers"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115,<1",
+]
+
+[dependency-groups]
+dev = [
+    "workers-py",
+    "workers-runtime-sdk",
+]
+

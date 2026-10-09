@@ -1,0 +1,25 @@
+{
+  "documents": [
+    {
+      "type": "TERMS_OF_USE",
+      "version": "demo-2026-10",
+      "title": "Terms of Use · Demo",
+      "content_file": "terms.txt",
+      "is_mandatory": true
+    },
+    {
+      "type": "PRIVACY_POLICY",
+      "version": "demo-2026-10",
+      "title": "Privacy Policy · Demo",
+      "content_file": "privacy.txt",
+      "is_mandatory": true
+    },
+    {
+      "type": "PERSONAL_DATA_CONSENT",
+      "version": "demo-2026-10",
+      "title": "Personal Data Processing Consent · Demo",
+      "content_file": "personal-data.txt",
+      "is_mandatory": true
+    }
+  ]
+}

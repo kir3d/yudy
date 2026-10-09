@@ -1,0 +1,10 @@
+.dev.vars
+.dry-run*/
+.wrangler/
+.venv/
+.venv-workers/
+node_modules/
+python_modules/
+__pycache__/
+wrangler.jsonc
+uv.lock

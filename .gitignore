@@ -1,0 +1,95 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!**/.env.example
+.dev.vars
+**/.dev.vars
+!**/.dev.vars.example
+*.secret
+*.secrets
+secrets.*
+credentials*.json
+service-account*.json
+google-services.json
+.npmrc
+.pypirc
+.netrc
+
+# Private keys and signing material
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+id_rsa*
+id_ed25519*
+
+# Internal documentation and development history
+temp/
+releases/
+*.md
+!/README.md
+.history/
+*.history
+.codex/
+.claude/
+.agents/
+.superstack/
+
+# Logs and reports
+*.log
+*.log.*
+logs/
+**/logs/
+*.hprof
+hs_err_pid*
+
+# IDE and operating system files
+.DS_Store
+.idea/
+.vscode/
+*.iml
+*~
+*.swp
+*.swo
+
+# Python
+.venv/
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# JavaScript and Cloudflare generated files
+node_modules/
+**/node_modules/
+.wrangler/
+**/.wrangler/
+worker-backend/.dry-run*/
+worker-backend/.refresh-fix-dry-run/
+worker-backend/.route-check/
+worker-backend/python_modules/
+uv.lock
+
+# Android and Gradle
+android/.gradle/
+android/.kotlin/
+android/local.properties
+**/build/
+*.apk
+*.aab
+
+# Local build and test artifacts
+*.tmp
+*.bak
+*.orig
+.cache/

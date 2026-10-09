@@ -1,0 +1,15 @@
+DEMO DOCUMENT — LOCAL MVP
+
+This is a demonstration of explicit consent recording for the local prototype, not a finalized production consent form.
+
+What you acknowledge in this demo
+By selecting the checkbox for this document and pressing Accept and continue, you explicitly allow the local prototype to record your acceptance of this version and process the account information described in the current demo Privacy Policy for account access and operation of the prototype.
+
+No automatic or financial consent
+Creating an account, opening a document or leaving a checkbox unselected does not count as acceptance. Acceptance does not authorize any purchase, custody, payment, trade execution or professional suitability assessment.
+
+Version-specific record
+The prototype records your account id, this document's id and version, and the date and time of acceptance. Repeating acceptance of the same version does not change the original timestamp.
+
+Choice
+You can decline by leaving this flow or signing out. Mandatory current documents must be accepted before onboarding can continue. A production release requires its actual operator, purposes, applicable legal basis, withdrawal mechanism and contact details to be established in reviewed documents.

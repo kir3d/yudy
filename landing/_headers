@@ -1,0 +1,16 @@
+/*
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+
+/styles.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*.jpg
+  Cache-Control: public, max-age=604800
+
+/downloads/*.apk
+  Content-Type: application/vnd.android.package-archive
+  Cache-Control: public, max-age=3600

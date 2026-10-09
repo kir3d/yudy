@@ -1,0 +1,112 @@
+{
+  "goals": [
+    {
+      "code": "growth",
+      "title": "Long-term growth"
+    },
+    {
+      "code": "income",
+      "title": "Income / dividends"
+    },
+    {
+      "code": "preservation",
+      "title": "Capital preservation"
+    },
+    {
+      "code": "diversification",
+      "title": "Diversification"
+    },
+    {
+      "code": "exploring",
+      "title": "I\u2019m exploring"
+    }
+  ],
+  "interests": [
+    {
+      "code": "automotive",
+      "title": "Automotive",
+      "kind": "SECTOR"
+    },
+    {
+      "code": "ai_technology",
+      "title": "AI & Technology",
+      "kind": "THEME"
+    },
+    {
+      "code": "healthcare",
+      "title": "Healthcare & Pharma",
+      "kind": "SECTOR"
+    },
+    {
+      "code": "finance",
+      "title": "Finance",
+      "kind": "SECTOR"
+    },
+    {
+      "code": "energy",
+      "title": "Energy",
+      "kind": "SECTOR"
+    },
+    {
+      "code": "green_energy",
+      "title": "Green Energy",
+      "kind": "THEME"
+    },
+    {
+      "code": "agriculture",
+      "title": "Agriculture",
+      "kind": "SECTOR"
+    },
+    {
+      "code": "retail",
+      "title": "Retail",
+      "kind": "SECTOR"
+    },
+    {
+      "code": "luxury",
+      "title": "Luxury",
+      "kind": "THEME"
+    },
+    {
+      "code": "travel",
+      "title": "Travel",
+      "kind": "SECTOR"
+    },
+    {
+      "code": "manufacturing",
+      "title": "Manufacturing",
+      "kind": "SECTOR"
+    },
+    {
+      "code": "oil_gas",
+      "title": "Oil & Gas",
+      "kind": "SECTOR"
+    }
+  ],
+  "regions": [
+    {
+      "code": "usa",
+      "title": "USA"
+    },
+    {
+      "code": "europe",
+      "title": "Europe"
+    },
+    {
+      "code": "asia",
+      "title": "Asia"
+    },
+    {
+      "code": "china",
+      "title": "China"
+    },
+    {
+      "code": "japan",
+      "title": "Japan"
+    },
+    {
+      "code": "middle_east",
+      "title": "Middle East"
+    }
+  ]
+}

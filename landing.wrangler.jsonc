@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "yudy-landing-site",
+  "compatibility_date": "2026-10-09",
+  "main": "./landing-worker.js",
+  "assets": {
+    "directory": "./landing",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "routes": [
+    {
+      "pattern": "yudyai.xyz/*",
+      "zone_name": "yudyai.xyz"
+    }
+  ]
+}

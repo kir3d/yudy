@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.Yudy" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/yudy_midnight</item>
+        <item name="android:navigationBarColor">@color/yudy_midnight</item>
+        <item name="android:windowBackground">@color/yudy_midnight</item>
+    </style>
+</resources>

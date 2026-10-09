@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091211">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <link rel="icon" href="logo-mark.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+  <title>YUDY // Stats</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="YUDY Stats home">
+      <img src="logo-mark.jpg" width="52" height="52" alt="">
+      <span>YUDY</span>
+      <small>// STATS</small>
+    </a>
+    <button class="text-button" id="logoutButton" type="button" hidden>Sign out</button>
+  </header>
+
+  <main>
+    <section class="access-view" id="accessView" aria-labelledby="accessTitle">
+      <div class="access-copy">
+        <p class="eyebrow"><span></span> PRIVATE ANALYTICS</p>
+        <h1 id="accessTitle">Enter your<br><em>access code.</em></h1>
+        <p>A six-digit code is required to open the dashboard.</p>
+      </div>
+      <form class="code-panel" id="codeForm">
+        <div class="panel-index">01 / VERIFY</div>
+        <label for="codeInput">Six-digit code</label>
+        <input id="codeInput" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="000000" aria-describedby="accessStatus" required>
+        <button class="primary-button" id="verifyButton" type="submit">Open dashboard <span>↗</span></button>
+        <p class="status" id="accessStatus" role="status" aria-live="polite">Requesting a secure code…</p>
+        <button class="resend-button" id="resendButton" type="button" disabled>Send another code</button>
+      </form>
+    </section>
+
+    <section class="dashboard" id="dashboard" aria-label="YUDY product analytics" hidden>
+      <div class="dashboard-heading">
+        <div class="updated"><span></span><div>LAST UPDATED<strong id="updatedAt">—</strong></div></div>
+      </div>
+
+      <div class="metrics" aria-label="Lifetime totals">
+        <article class="metric">
+          <div class="metric-top"><span>01</span><small>ACCOUNTS</small></div>
+          <strong id="accountsTotal">—</strong>
+          <p>Registered active accounts</p>
+          <svg class="mini-chart" id="accountsMini" viewBox="0 0 240 64" role="img" aria-label="Daily registered accounts over 30 days"></svg>
+        </article>
+        <article class="metric">
+          <div class="metric-top"><span>02</span><small>AI REQUESTS</small></div>
+          <strong id="aiTotal">—</strong>
+          <p>Generated xStocks selections</p>
+          <svg class="mini-chart" id="aiMini" viewBox="0 0 240 64" role="img" aria-label="Daily AI requests over 30 days"></svg>
+        </article>
+        <article class="metric">
+          <div class="metric-top"><span>03</span><small>ASSETS</small></div>
+          <strong id="assetsTotal">—</strong>
+          <p>Assets returned in AI selections</p>
+          <svg class="mini-chart" id="assetsMini" viewBox="0 0 240 64" role="img" aria-label="Daily processed assets over 30 days"></svg>
+        </article>
+      </div>
+
+      <section class="activity-panel" aria-labelledby="activityTitle">
+        <div class="activity-heading">
+          <div><span>30 DAYS</span><h2 id="activityTitle">Daily activity</h2></div>
+          <div class="legend" aria-label="Chart legend">
+            <span><i class="accounts-dot"></i>Accounts</span>
+            <span><i class="ai-dot"></i>AI requests</span>
+            <span><i class="assets-dot"></i>Assets</span>
+          </div>
+        </div>
+        <div class="chart-wrap">
+          <svg class="activity-chart" id="activityChart" viewBox="0 0 1000 260" preserveAspectRatio="none" role="img" aria-label="Accounts, AI requests and processed assets by day over the last 30 days"></svg>
+        </div>
+        <div class="chart-dates"><span id="startDate">—</span><span id="endDate">—</span></div>
+      </section>
+    </section>
+  </main>
+
+  <footer><span>YUDY // INTERNAL</span><span>Product analytics</span></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

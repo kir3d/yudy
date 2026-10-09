@@ -1,0 +1,48 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "yudy-api",
+  "main": "src/worker.py",
+  "compatibility_date": "2026-10-06",
+  "compatibility_flags": ["python_workers"],
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "api.yudyai.xyz",
+      "custom_domain": true
+    }
+  ],
+  "vars": {
+    "APP_ENV": "production",
+    "CORS_ORIGINS": "https://yudyai.xyz,https://www.yudyai.xyz",
+    "BUY_PROVIDER_BASE_URL": "https://provider.yudyai.xyz",
+    "BUY_PROVIDER_NAME": "YUDY Demo Provider",
+    "XSTOCKS_API_BASE": "https://api.xstocks.fi/api/v2",
+    "COINGECKO_API_BASE": "https://api.coingecko.com/api/v3",
+    "AI_MODEL": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+    "PERSONALIZATION_WEIGHTS": "{\"sector_match\":30,\"theme_match\":30,\"region_match\":15,\"goal_match\":10,\"experience_match\":2,\"horizon_match\":2,\"risk_match\":2,\"liked_asset\":8,\"saved_asset\":6,\"liked_similar\":5,\"saved_similar\":3,\"viewed_similar\":1,\"excluded_interest\":-40,\"disliked_asset\":-60,\"disliked_similar\":-30,\"sector_codes\":{\"oil_gas\":\"Oil & Gas\"},\"goal_themes\":{\"growth\":[\"ai_technology\",\"green_energy\"]},\"etf_goals\":[\"diversification\"],\"etf_experience\":[\"NEW\"],\"etf_horizons\":[\"FIVE_PLUS\"],\"etf_risk_categories\":[\"Conservative\"]}"
+  },
+  "ai": {
+    "binding": "AI"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "yudy-production",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "ratelimits": [
+    {
+      "name": "AUTH_RATE_LIMITER",
+      "namespace_id": "1001",
+      "simple": {
+        "limit": 10,
+        "period": 60
+      }
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
